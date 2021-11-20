@@ -1,0 +1,54 @@
+$date
+	Sun Nov 21 00:06:44 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module dec4_16_tb $end
+$var wire 16 ! output0 [15:0] $end
+$var reg 1 " e $end
+$var reg 1 # input0 $end
+$var reg 1 $ input1 $end
+$var reg 1 % input2 $end
+$var reg 1 & input3 $end
+$scope module s $end
+$var wire 1 " e $end
+$var wire 1 # input0 $end
+$var wire 1 $ input1 $end
+$var wire 1 % input2 $end
+$var wire 1 & input3 $end
+$var wire 16 ' output0 [15:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx '
+x&
+x%
+x$
+x#
+x"
+bx !
+$end
+#2
+1"
+#4
+b0xxxxxxxx !
+b0xxxxxxxx '
+0#
+#6
+b0xxxx !
+b0xxxx '
+0$
+#8
+b0xx !
+b0xx '
+0%
+#10
+b1 !
+b1 '
+0&
