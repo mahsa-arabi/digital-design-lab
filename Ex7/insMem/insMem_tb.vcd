@@ -1,0 +1,38 @@
+$date
+	Wed Dec 01 00:50:57 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module insMem_tb $end
+$var wire 32 ! dataOut [31:0] $end
+$var reg 32 " adress [31:0] $end
+$var reg 1 # clk $end
+$var reg 32 $ dataIn [31:0] $end
+$var reg 1 % read $end
+$var reg 1 & write $end
+$scope module ins $end
+$var wire 32 ' adress [31:0] $end
+$var wire 1 # clk $end
+$var wire 32 ( dataIn [31:0] $end
+$var wire 1 % read $end
+$var wire 1 & write $end
+$var wire 32 ) dataOut [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx )
+b0 (
+b0 '
+0&
+0%
+b0 $
+0#
+b0 "
+bx !
+$end

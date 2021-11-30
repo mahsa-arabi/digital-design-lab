@@ -1,0 +1,88 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1110-g18392a46)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 12;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_00000217203385c0 .scope module, "insMem_tb" "insMem_tb" 2 4;
+ .timescale -9 -12;
+v0000021720342590_0 .var "adress", 31 0;
+v0000021720341b90_0 .var "clk", 0 0;
+v0000021720341f50_0 .var "dataIn", 31 0;
+v0000021720341cd0_0 .net "dataOut", 31 0, L_0000021720341e10;  1 drivers
+v0000021720342450_0 .var "read", 0 0;
+v0000021720341eb0_0 .var "write", 0 0;
+S_000002172048c220 .scope module, "ins" "insMem" 2 9, 3 1 0, S_00000217203385c0;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 32 "dataIn";
+    .port_info 1 /INPUT 32 "adress";
+    .port_info 2 /INPUT 1 "clk";
+    .port_info 3 /OUTPUT 32 "dataOut";
+    .port_info 4 /INPUT 1 "write";
+    .port_info 5 /INPUT 1 "read";
+v000002172048c3b0_0 .net *"_ivl_0", 31 0, L_0000021720342270;  1 drivers
+L_000002172038ff68 .functor BUFT 1, C4<xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx>, C4<0>, C4<0>, C4<0>;
+v00000217204867b0_0 .net *"_ivl_10", 31 0, L_000002172038ff68;  1 drivers
+L_000002172038fed8 .functor BUFT 1, C4<0000000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v000002172048c450_0 .net *"_ivl_3", 30 0, L_000002172038fed8;  1 drivers
+L_000002172038ff20 .functor BUFT 1, C4<00000000000000000000000000000001>, C4<0>, C4<0>, C4<0>;
+v000002172048c4f0_0 .net/2u *"_ivl_4", 31 0, L_000002172038ff20;  1 drivers
+v000002172048c590_0 .net *"_ivl_6", 0 0, L_0000021720341ff0;  1 drivers
+v000002172048c630_0 .net *"_ivl_8", 31 0, L_0000021720342310;  1 drivers
+v000002172038f840_0 .net "adress", 31 0, v0000021720342590_0;  1 drivers
+v000002172038f8e0_0 .net "clk", 0 0, v0000021720341b90_0;  1 drivers
+v000002172038f980_0 .net "dataIn", 31 0, v0000021720341f50_0;  1 drivers
+v000002172038fa20_0 .net "dataOut", 31 0, L_0000021720341e10;  alias, 1 drivers
+v0000021720342770 .array "mem", 1023 0, 31 0;
+v00000217203421d0_0 .net "read", 0 0, v0000021720342450_0;  1 drivers
+v0000021720341d70_0 .net "write", 0 0, v0000021720341eb0_0;  1 drivers
+E_000002172048b510 .event negedge, v000002172038f8e0_0;
+L_0000021720342270 .concat [ 1 31 0 0], v0000021720342450_0, L_000002172038fed8;
+L_0000021720341ff0 .cmp/eq 32, L_0000021720342270, L_000002172038ff20;
+L_0000021720342310 .array/port v0000021720342770, v0000021720342590_0;
+L_0000021720341e10 .functor MUXZ 32, L_000002172038ff68, L_0000021720342310, L_0000021720341ff0, C4<>;
+    .scope S_000002172048c220;
+T_0 ;
+    %wait E_000002172048b510;
+    %load/vec4 v0000021720341d70_0;
+    %pad/u 32;
+    %cmpi/e 1, 0, 32;
+    %jmp/0xz  T_0.0, 4;
+    %load/vec4 v000002172038f980_0;
+    %ix/getv 4, v000002172038f840_0;
+    %store/vec4a v0000021720342770, 4, 0;
+T_0.0 ;
+    %jmp T_0;
+    .thread T_0;
+    .scope S_00000217203385c0;
+T_1 ;
+    %vpi_call 2 12 "$dumpfile", "insMem_tb.vcd" {0 0 0};
+    %vpi_call 2 13 "$dumpvars", 32'sb00000000000000000000000000000000, S_00000217203385c0 {0 0 0};
+    %pushi/vec4 0, 0, 32;
+    %store/vec4 v0000021720341f50_0, 0, 32;
+    %pushi/vec4 0, 0, 32;
+    %store/vec4 v0000021720342590_0, 0, 32;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000021720341eb0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000021720342450_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000021720341b90_0, 0, 1;
+    %delay 100000, 0;
+    %vpi_call 2 21 "$stop" {0 0 0};
+    %end;
+    .thread T_1;
+    .scope S_00000217203385c0;
+T_2 ;
+    %vpi_call 2 26 "$display", "test completed" {0 0 0};
+    %end;
+    .thread T_2;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "insMem_tb.v";
+    "./insMem.v";
