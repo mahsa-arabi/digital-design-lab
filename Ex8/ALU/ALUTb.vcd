@@ -1,0 +1,45 @@
+$date
+	Sat Dec 11 18:47:51 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module ALUTb $end
+$var wire 1 ! zero $end
+$var wire 64 " output0 [63:0] $end
+$var wire 1 # carry $end
+$var reg 64 $ input0 [63:0] $end
+$var reg 64 % input1 [63:0] $end
+$var reg 4 & select [3:0] $end
+$scope module myALU $end
+$var wire 64 ' input0 [63:0] $end
+$var wire 64 ( input1 [63:0] $end
+$var wire 64 ) output0 [63:0] $end
+$var wire 4 * select [3:0] $end
+$var wire 1 ! zero $end
+$var wire 65 + temp [64:0] $end
+$var wire 1 # carry $end
+$var reg 64 , result [63:0] $end
+$var reg 1 - temp2 $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1-
+b0 ,
+b0 +
+b0 *
+b0 )
+b0 (
+b0 '
+b0 &
+b0 %
+b0 $
+0#
+b0 "
+1!
+$end

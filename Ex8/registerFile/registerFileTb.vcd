@@ -1,0 +1,50 @@
+$date
+	Sat Dec 11 20:55:08 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module registerFileTb $end
+$var wire 8 ! read2 [7:0] $end
+$var wire 8 " read1 [7:0] $end
+$var reg 1 # clk $end
+$var reg 8 $ data [7:0] $end
+$var reg 1 % enable $end
+$var reg 8 & readReg1 [7:0] $end
+$var reg 8 ' readReg2 [7:0] $end
+$var reg 2 ( writeAd [1:0] $end
+$var reg 1 ) writeCntrl $end
+$scope module myReg $end
+$var wire 1 # clk $end
+$var wire 8 * data [7:0] $end
+$var wire 1 % enable $end
+$var wire 8 + read1 [7:0] $end
+$var wire 8 , read2 [7:0] $end
+$var wire 8 - readReg1 [7:0] $end
+$var wire 8 . readReg2 [7:0] $end
+$var wire 2 / writeAd [1:0] $end
+$var wire 1 ) writeCntrl $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 /
+b0 .
+b0 -
+bx ,
+bx +
+b0 *
+0)
+b0 (
+b0 '
+b0 &
+0%
+b0 $
+0#
+bx "
+bx !
+$end
