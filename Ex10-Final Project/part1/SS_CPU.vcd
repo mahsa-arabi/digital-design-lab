@@ -1,0 +1,223 @@
+$date
+	Fri Jan 21 19:36:36 2022
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module SS_CPU $end
+$var wire 32 ! Mux10output [31:0] $end
+$var wire 32 " RD [31:0] $end
+$var wire 1 # andoutput $end
+$var wire 64 $ shiftoutput [63:0] $end
+$var wire 32 % pc_input [31:0] $end
+$var wire 64 & immediateout [63:0] $end
+$var wire 64 ' e [63:0] $end
+$var wire 64 ( d [63:0] $end
+$var wire 1 ) clk $end
+$var wire 32 * branchaddress [31:0] $end
+$var wire 1 + Zero $end
+$var wire 32 , Writedata [31:0] $end
+$var wire 1 - RegWrite $end
+$var wire 64 . RD2 [63:0] $end
+$var wire 64 / RD1 [63:0] $end
+$var wire 32 0 PCPlus4 [31:0] $end
+$var wire 32 1 PC [31:0] $end
+$var wire 64 2 Mux1output [63:0] $end
+$var wire 1 3 MemtoReg $end
+$var wire 1 4 MemWrite $end
+$var wire 1 5 MemRead $end
+$var wire 32 6 DataOutput [31:0] $end
+$var wire 4 7 Control [3:0] $end
+$var wire 1 8 Branch $end
+$var wire 2 9 Aluop [1:0] $end
+$var wire 1 : ALUSrc $end
+$var wire 32 ; ALUOut [31:0] $end
+$var reg 1 < pc_enable $end
+$var reg 32 = pc_input1 [31:0] $end
+$scope module A1 $end
+$var wire 32 > sum [31:0] $end
+$var wire 32 ? input0 [31:0] $end
+$upscope $end
+$scope module A2 $end
+$var wire 32 @ input0 [31:0] $end
+$var wire 32 A input1 [31:0] $end
+$var wire 1 + zero $end
+$var wire 65 B temp [64:0] $end
+$var wire 4 C select [3:0] $end
+$var wire 32 D output0 [31:0] $end
+$var wire 1 E carry $end
+$var reg 64 F result [63:0] $end
+$var reg 1 + temp2 $end
+$upscope $end
+$scope module A23 $end
+$var wire 32 G input1 [31:0] $end
+$var wire 32 H sum [31:0] $end
+$var wire 32 I input0 [31:0] $end
+$upscope $end
+$scope module A3 $end
+$var wire 3 J funct3 [2:0] $end
+$var wire 1 K funct7 $end
+$var wire 2 L ALUOp [1:0] $end
+$var reg 4 M ALUControl [3:0] $end
+$upscope $end
+$scope module D1 $end
+$var wire 32 N address [31:0] $end
+$var wire 32 O write_data [31:0] $end
+$var wire 1 4 memwrite $end
+$var wire 1 5 memread $end
+$var wire 1 ) clk $end
+$var reg 32 P read_data [31:0] $end
+$var integer 32 Q i [31:0] $end
+$upscope $end
+$scope module I1 $end
+$var wire 32 R readData [31:0] $end
+$var wire 32 S adress [31:0] $end
+$var reg 1 T temp $end
+$upscope $end
+$scope module M1 $end
+$var wire 7 U opcode [6:0] $end
+$var wire 1 - RegWrite $end
+$var wire 1 3 MemtoReg $end
+$var wire 1 4 MemWrite $end
+$var wire 1 5 MemRead $end
+$var wire 1 8 Branch $end
+$var wire 2 V Aluop [1:0] $end
+$var wire 1 : ALUSrc $end
+$var reg 9 W control [8:0] $end
+$upscope $end
+$scope module M2 $end
+$var wire 32 X input0 [31:0] $end
+$var wire 32 Y input1 [31:0] $end
+$var wire 32 Z input2 [31:0] $end
+$var wire 2 [ s [1:0] $end
+$var wire 32 \ out [31:0] $end
+$upscope $end
+$scope module M3 $end
+$var wire 32 ] input0 [31:0] $end
+$var wire 32 ^ input1 [31:0] $end
+$var wire 1 # s $end
+$var wire 32 _ y [31:0] $end
+$upscope $end
+$scope module M4 $end
+$var wire 64 ` input0 [63:0] $end
+$var wire 1 : s $end
+$var wire 64 a y [63:0] $end
+$var wire 64 b input1 [63:0] $end
+$upscope $end
+$scope module P1 $end
+$var wire 32 c adr [31:0] $end
+$var wire 1 < enable $end
+$var wire 1 ) clk $end
+$var reg 32 d pc [31:0] $end
+$upscope $end
+$scope module R1 $end
+$var wire 32 e data [31:0] $end
+$var wire 32 f read1 [31:0] $end
+$var wire 32 g read2 [31:0] $end
+$var wire 5 h readReg1 [4:0] $end
+$var wire 5 i readReg2 [4:0] $end
+$var wire 5 j writeAd [4:0] $end
+$var wire 1 - writeCntrl $end
+$var wire 1 ) clk $end
+$upscope $end
+$scope module S1 $end
+$var wire 32 k instructor [31:0] $end
+$var reg 64 l outputData [63:0] $end
+$upscope $end
+$scope module S12 $end
+$var wire 64 m dataIn [63:0] $end
+$var wire 64 n dataOut [63:0] $end
+$upscope $end
+$scope module c $end
+$var reg 1 ) clk $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx0 n
+bx m
+bx l
+bx k
+bx j
+bx i
+bx h
+bx g
+bx f
+bx e
+bx d
+bx c
+bx b
+bx a
+bzxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx `
+bx _
+bx ^
+bx ]
+bx \
+b0x [
+bx Z
+b0 Y
+bx X
+bx W
+bx V
+bx U
+xT
+bx S
+bx R
+b100000000 Q
+b0 P
+bx O
+bx N
+bx M
+bx L
+xK
+bx J
+bx I
+bx H
+bx0 G
+bx F
+xE
+bx D
+bx C
+bx B
+bx A
+bz @
+bx ?
+bx >
+bx =
+1<
+bx ;
+x:
+bx 9
+x8
+bx 7
+b0 6
+x5
+x4
+x3
+bx 2
+bx 1
+bx 0
+bzxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx /
+bzxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx .
+x-
+bx ,
+x+
+bx *
+0)
+bz (
+bx '
+bx &
+bx %
+bx0 $
+x#
+bx "
+bz !
+$end
+#10000
+b0 =
+b0 c
+#20000

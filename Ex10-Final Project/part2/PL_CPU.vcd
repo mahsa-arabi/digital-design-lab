@@ -1,0 +1,378 @@
+$date
+	Fri Jan 21 19:35:32 2022
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module PL_CPU $end
+$var wire 1 ! regWrite $end
+$var wire 1 " sel $end
+$var wire 1 # zero $end
+$var wire 32 $ writeData [31:0] $end
+$var wire 5 % writeAd [4:0] $end
+$var wire 32 & readData2 [31:0] $end
+$var wire 32 ' readData1 [31:0] $end
+$var wire 32 ( readData [31:0] $end
+$var wire 5 ) rd2 [4:0] $end
+$var wire 5 * rd0 [4:0] $end
+$var wire 5 + rd [4:0] $end
+$var wire 32 , pcAddFour [31:0] $end
+$var wire 32 - instruction [31:0] $end
+$var wire 64 . immediate [63:0] $end
+$var wire 3 / controlsignal0 [2:0] $end
+$var wire 6 0 controlSignal [5:0] $end
+$var wire 8 1 control [7:0] $end
+$var wire 1 2 clk $end
+$var wire 32 3 addressOut [31:0] $end
+$var wire 32 4 adderResult [31:0] $end
+$var wire 1 5 RegWrite $end
+$var wire 32 6 ReadData3 [31:0] $end
+$var wire 5 7 R2 [4:0] $end
+$var wire 5 8 R1 [4:0] $end
+$var wire 32 9 PC [31:0] $end
+$var wire 32 : Aluresult2 [31:0] $end
+$var wire 32 ; AdderResult2 [31:0] $end
+$var wire 4 < ALUcontrol [3:0] $end
+$var wire 32 = ALUResult [31:0] $end
+$var reg 1 > PCSrc $end
+$var reg 1 ? pc_enable $end
+$scope module c $end
+$var reg 1 2 clk $end
+$upscope $end
+$scope module fifth $end
+$var wire 32 @ Writeback [31:0] $end
+$var wire 3 A controlsignals [2:0] $end
+$var wire 5 B rd [4:0] $end
+$var wire 32 C writeback [31:0] $end
+$var wire 32 D readData [31:0] $end
+$var wire 1 5 RegWrite $end
+$var wire 5 E Rd [4:0] $end
+$var wire 32 F ALUResult [31:0] $end
+$scope module M $end
+$var wire 1 G s $end
+$var wire 32 H y [31:0] $end
+$var wire 32 I input1 [31:0] $end
+$var wire 32 J input0 [31:0] $end
+$upscope $end
+$upscope $end
+$scope module first $end
+$var wire 1 > PCSrc $end
+$var wire 32 K addressOut [31:0] $end
+$var wire 1 2 clk $end
+$var wire 32 L insRead [31:0] $end
+$var wire 32 M instruction [31:0] $end
+$var wire 1 ? pc_enable $end
+$var wire 32 N pc_input [31:0] $end
+$var wire 32 O pcOut [31:0] $end
+$var wire 32 P pcAddFour [31:0] $end
+$var wire 32 Q adderResult [31:0] $end
+$scope module A $end
+$var wire 32 R sum [31:0] $end
+$var wire 32 S input0 [31:0] $end
+$upscope $end
+$scope module I $end
+$var wire 32 T readData [31:0] $end
+$var wire 32 U adress [31:0] $end
+$var reg 1 V temp $end
+$upscope $end
+$scope module M $end
+$var wire 32 W input1 [31:0] $end
+$var wire 1 > s $end
+$var wire 32 X y [31:0] $end
+$var wire 32 Y input0 [31:0] $end
+$upscope $end
+$scope module PC $end
+$var wire 32 Z adr [31:0] $end
+$var wire 1 2 clk $end
+$var wire 1 ? enable $end
+$var reg 32 [ pc [31:0] $end
+$upscope $end
+$upscope $end
+$scope module fourth $end
+$var wire 32 \ AdderResult [31:0] $end
+$var wire 32 ] Aluresult [31:0] $end
+$var wire 1 ^ andoutput $end
+$var wire 1 2 clk $end
+$var wire 5 _ rd [4:0] $end
+$var wire 32 ` readData [31:0] $end
+$var wire 1 " sel $end
+$var wire 1 # zero $end
+$var wire 5 a rd0 [4:0] $end
+$var wire 32 b dataMemOut [31:0] $end
+$var wire 3 c controlsignal0 [2:0] $end
+$var wire 6 d controlSignal [5:0] $end
+$var wire 32 e adderResult [31:0] $end
+$var wire 32 f ReadData2 [31:0] $end
+$var wire 32 g ALUResult [31:0] $end
+$scope module DM $end
+$var wire 1 2 clk $end
+$var wire 1 h memread $end
+$var wire 1 i memwrite $end
+$var wire 32 j write_data [31:0] $end
+$var wire 32 k address [31:0] $end
+$var reg 32 l read_data [31:0] $end
+$var integer 32 m i [31:0] $end
+$upscope $end
+$upscope $end
+$scope module second $end
+$var wire 32 n PC [31:0] $end
+$var wire 1 o Regwrite $end
+$var wire 1 2 clk $end
+$var wire 64 p immediate [63:0] $end
+$var wire 32 q instruction [31:0] $end
+$var wire 32 r pc [31:0] $end
+$var wire 32 s readData1 [31:0] $end
+$var wire 32 t readData2 [31:0] $end
+$var wire 1 ! regWrite $end
+$var wire 5 u writeAd [4:0] $end
+$var wire 32 v writeData [31:0] $end
+$var wire 32 w read2 [31:0] $end
+$var wire 32 x read1 [31:0] $end
+$var wire 5 y rd [4:0] $end
+$var wire 64 z immediateOut [63:0] $end
+$var wire 8 { control [7:0] $end
+$var wire 1 | RegWrite $end
+$var wire 5 } R2 [4:0] $end
+$var wire 5 ~ R1 [4:0] $end
+$var wire 1 !" MemtoReg $end
+$var wire 1 "" MemWrite $end
+$var wire 1 #" MemRead $end
+$var wire 1 $" Branch $end
+$var wire 2 %" Aluop [1:0] $end
+$var wire 4 &" ALUcontrol [3:0] $end
+$var wire 1 '" ALUSrc $end
+$scope module C $end
+$var wire 7 (" opcode [6:0] $end
+$var wire 1 | RegWrite $end
+$var wire 1 !" MemtoReg $end
+$var wire 1 "" MemWrite $end
+$var wire 1 #" MemRead $end
+$var wire 1 $" Branch $end
+$var wire 2 )" Aluop [1:0] $end
+$var wire 1 '" ALUSrc $end
+$var reg 9 *" control [8:0] $end
+$upscope $end
+$scope module I $end
+$var wire 32 +" instructor [31:0] $end
+$var reg 64 ," outputData [63:0] $end
+$upscope $end
+$scope module R $end
+$var wire 1 2 clk $end
+$var wire 32 -" data [31:0] $end
+$var wire 32 ." read1 [31:0] $end
+$var wire 32 /" read2 [31:0] $end
+$var wire 5 0" readReg1 [4:0] $end
+$var wire 5 1" readReg2 [4:0] $end
+$var wire 5 2" writeAd [4:0] $end
+$var wire 1 ! writeCntrl $end
+$upscope $end
+$upscope $end
+$scope module third $end
+$var wire 32 3" ALUResult [31:0] $end
+$var wire 4 4" ALUcontrol [3:0] $end
+$var wire 32 5" PC [31:0] $end
+$var wire 5 6" R1 [4:0] $end
+$var wire 5 7" R2 [4:0] $end
+$var wire 32 8" ReadData2 [31:0] $end
+$var wire 32 9" adderResult [31:0] $end
+$var wire 8 :" control [7:0] $end
+$var wire 64 ;" immediate [63:0] $end
+$var wire 32 <" immediateout [31:0] $end
+$var wire 5 =" rd [4:0] $end
+$var wire 5 >" rd0 [4:0] $end
+$var wire 32 ?" readData1 [31:0] $end
+$var wire 32 @" readData2 [31:0] $end
+$var wire 1 # zero $end
+$var wire 32 A" muxOut [31:0] $end
+$var wire 6 B" controlSignal [5:0] $end
+$var wire 1 C" Zero $end
+$var wire 32 D" AdderResult [31:0] $end
+$var wire 32 E" ALUresult [31:0] $end
+$var wire 4 F" ALUcontrolOut [3:0] $end
+$scope module A $end
+$var wire 32 G" input0 [31:0] $end
+$var wire 32 H" input1 [31:0] $end
+$var wire 32 I" sum [31:0] $end
+$upscope $end
+$scope module AC $end
+$var wire 2 J" ALUOp [1:0] $end
+$var wire 3 K" funct3 [2:0] $end
+$var wire 1 L" funct7 $end
+$var reg 4 M" ALUControl [3:0] $end
+$upscope $end
+$scope module AL $end
+$var wire 32 N" input0 [31:0] $end
+$var wire 4 O" select [3:0] $end
+$var wire 1 C" zero $end
+$var wire 65 P" temp [64:0] $end
+$var wire 32 Q" output0 [31:0] $end
+$var wire 32 R" input1 [31:0] $end
+$var wire 1 S" carry $end
+$var reg 64 T" result [63:0] $end
+$var reg 1 C" temp2 $end
+$upscope $end
+$scope module M $end
+$var wire 32 U" input0 [31:0] $end
+$var wire 32 V" input1 [31:0] $end
+$var wire 1 W" s $end
+$var wire 32 X" y [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx X"
+xW"
+bx V"
+bx U"
+bx T"
+xS"
+bx R"
+bx Q"
+bx P"
+bx O"
+bx N"
+bx M"
+xL"
+bx K"
+bx J"
+bx I"
+bz H"
+bx G"
+bx F"
+bx E"
+bx D"
+xC"
+bxzxxx B"
+bx A"
+bx @"
+bx ?"
+bx >"
+bx ="
+bz <"
+bx ;"
+bxzxxxxx :"
+bx 9"
+bx 8"
+bx 7"
+bx 6"
+bx 5"
+bx 4"
+bx 3"
+bx 2"
+bx 1"
+bx 0"
+bx /"
+bx ."
+bx -"
+bx ,"
+bx +"
+bx *"
+bx )"
+bx ("
+x'"
+bx &"
+bx %"
+x$"
+x#"
+x""
+x!"
+bx ~
+bx }
+x|
+bxzxxxxx {
+bx z
+bx y
+bx x
+bx w
+bx v
+bx u
+bx t
+bx s
+bx r
+bx q
+bx p
+zo
+bx n
+b100000000 m
+b0 l
+bx k
+bx j
+xi
+zh
+bx g
+bx f
+bx e
+bxzxxx d
+bx c
+b0 b
+bx a
+b0 `
+bx _
+x^
+bx ]
+bx \
+bx [
+bx Z
+bx Y
+bx X
+bx W
+xV
+bx U
+bx T
+bx S
+bx R
+bx Q
+bx P
+bx O
+bx N
+bx M
+bx L
+bx K
+bx J
+b0 I
+bx H
+xG
+bx F
+bx E
+b0 D
+bx C
+bx B
+bx A
+bx @
+1?
+0>
+bx =
+bx <
+bx ;
+bx :
+bx 9
+bx 8
+bx 7
+bx 6
+x5
+bx 4
+bx 3
+02
+bxzxxxxx 1
+bxzxxx 0
+bx /
+bx .
+bx -
+bx ,
+bx +
+bx *
+bx )
+b0 (
+bx '
+bx &
+bx %
+bx $
+x#
+x"
+z!
+$end
